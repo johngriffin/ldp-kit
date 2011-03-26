@@ -5,6 +5,7 @@ api = 2
 projects[drupal][version] = "6.20"
 
 ; Modules
+; contrib
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "1.6"
 
@@ -37,7 +38,6 @@ projects[features][version] = "1.0"
 
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "1.0-beta10"
-
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.4"
@@ -87,6 +87,14 @@ projects[tabs][version] = "1.3"
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.15"
 
+projects[views_tabs][subdir] = "contrib"
+projects[views_tabs][version] = "1.0-beta1"
+
+projects[job_scheduler][subdir] = "contrib"
+projects[job_scheduler][version] = "1.0-beta3"
+
+
+; Patched
 projects[views][subdir] = "patched"
 projects[views][version] = "3.0-alpha3"
 ; Patches added to support sparql_views
@@ -95,22 +103,20 @@ projects[views][patch][] = "http://srvgal12.deri.ie/views_621142-39.patch"
 ; Broken/missing handler
 projects[views][patch][] = "http://drupal.org/files/issues/views_broken-handler_953716_3.patch"
 
-projects[views_tabs][subdir] = "contrib"
-projects[views_tabs][version] = "1.0-beta1"
-
 projects[sparql_views][subdir] = "patched"
 projects[sparql_views][download][type] = "git"
 projects[sparql_views][download][url] = "git@github.com:istos/sparql_views.git"
 projects[sparql_views][type] = "module"
 
-libraries[jquery_ui][download][type] = "get"
-libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
-libraries[jquery_ui][destination] = "modules/jquery_ui"
-libraries[jquery_ui][directory_name] = "jquery.ui"
-libraries[jsplumb][download][type] = "get"
-libraries[jsplumb][download][url] = "http://jsplumb.googlecode.com/files/jquery.jsPlumb-1.2.3-all-min.js"
-libraries[jsplumb][destination] = "modules/sparql_views/js"
 
+; Sandbox
+projects[rdfimporter][subdir] = "contrib"
+projects[rdfimporter][download][type] = "git"
+projects[rdfimporter][download][url] = "http://git.drupal.org/sandbox/milesw/1085078.git"
+projects[rdfimporter][type] = "module"
+
+
+; Features
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
 ;projects[indicatornode][download][type] = ""
@@ -128,53 +134,12 @@ libraries[jsplumb][destination] = "modules/sparql_views/js"
 ;projects[indicatorresults][version] = "1.3-dev"
 
 
-
 ; Themes
-
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[ldp-baseline][download][type] = ""
-;projects[ldp-baseline][download][url] = ""
-;projects[ldp-baseline][type] = "theme"
-
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
 ;projects[ldp][download][type] = ""
 ;projects[ldp][download][url] = ""
 ;projects[ldp][type] = "theme"
-
-
-; Modules
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[rdfimporter][download][type] = ""
-;projects[rdfimporter][download][url] = ""
-;projects[rdfimporter][type] = "module"
-
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[sparql_views_exhibit][download][type] = ""
-;projects[sparql_views_exhibit][download][url] = ""
-;projects[sparql_views_exhibit][type] = "module"
-
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[sparql_views_ui][download][type] = ""
-;projects[sparql_views_ui][download][url] = ""
-;projects[sparql_views_ui][type] = "module"
-
-; Themes
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[semantric][download][type] = ""
-;projects[semantric][download][url] = ""
-;projects[semantric][type] = "theme"
-
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[cube][download][type] = ""
-;projects[cube][download][url] = ""
-;projects[cube][type] = "theme"
 
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
@@ -182,11 +147,6 @@ libraries[jsplumb][destination] = "modules/sparql_views/js"
 ;projects[rubik][download][url] = ""
 ;projects[rubik][type] = "theme"
 
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[ginkgo][download][type] = ""
-;projects[ginkgo][download][url] = ""
-;projects[ginkgo][type] = "theme"
 
 ; Libraries
 libraries[arc][download][type] = "git"
@@ -204,7 +164,6 @@ libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymc
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
 
-
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
@@ -212,3 +171,4 @@ libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jsplumb][download][type] = "get"
 libraries[jsplumb][download][url] = "http://jsplumb.googlecode.com/files/jquery.jsPlumb-1.2.3-all-min.js"
 libraries[jsplumb][destination] = "modules/patched/sparql_views/js"
+
