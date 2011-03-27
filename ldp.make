@@ -166,8 +166,9 @@ libraries[tinymce][type] = "library"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
-libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 libraries[jquery_ui][directory_name] = "jquery.ui"
+libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
+
 libraries[jsplumb][download][type] = "get"
 libraries[jsplumb][download][url] = "http://jsplumb.googlecode.com/files/jquery.jsPlumb-1.2.3-all-min.js"
 libraries[jsplumb][destination] = "modules/patched/sparql_views/js"

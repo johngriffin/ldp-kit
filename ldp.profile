@@ -9,13 +9,15 @@
 function ldp_profile_modules() {
   $modules = array(
     // Default Drupal modules.
-    'path','comment', 'help', 'menu', 'taxonomy', 'dblog',
+    'path','comment', 'help', 'menu', 'taxonomy', 'dblog',  
     // Contributed modules
-    'admin_menu', 'content', 'fieldgroup', 'nodereference' , 'number', 'text', 'optionwidgets', 'context', 'context_ui', 'context_layouts', 'ctools', 'page_manager', 'views_content', 'devel', 'dialog', 'features', 'jquery_update', 'libraries', 'node_import', 'panels', 'panels_tabs', 'rdf', 'rdfcck',
+    'admin_menu', 'content', 'fieldgroup', 'nodereference' , 'number', 'text', 'optionwidgets', 'context', 'context_ui', 'context_layouts', 'ctools', 'page_manager', 'views_content', 'devel', 'dialog', 'features', 'jquery_update', 'libraries', 'node_import', 'panels', 'panels_tabs', 'rdf', 'rdfcck', 
 'recaptcha', 'token','pathauto',
-'schema','semanticviews','tabs', 'job_scheduler', 'feeds', 'rdfimporter',
+'schema','semanticviews','tabs', 'job_scheduler', 'feeds', 'feeds_ui', 'rdfimporter',
 	// Patched modules
-	'views', 'sparql_views', 'views_ui'
+	'views', 'sparql_views', 'views_ui',
+	// Features
+	'ldp_mortality_indicators'
   );
 
   return $modules;
