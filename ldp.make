@@ -93,6 +93,19 @@ projects[views_tabs][version] = "1.0-beta1"
 projects[job_scheduler][subdir] = "contrib"
 projects[job_scheduler][version] = "1.0-beta3"
 
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][version] = "2.0"
+
+projects[uuid][subdir] = "contrib"
+projects[uuid][version] = "1.0-beta2"
+
+projects[uuid_features][subdir] = "contrib"
+projects[uuid_features][version] = "1.0-alpha1"
+
+projects[advanced_help][subdir] = "contrib"
+projects[advanced_help][version] = "1.2"
+
+
 
 ; Patched
 projects[views][subdir] = "patched"
@@ -137,15 +150,6 @@ projects[rdfimporter][type] = "module"
 ; Themes
 ; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
 ; and url is the url of the download.
-;projects[ldp][download][type] = ""
-;projects[ldp][download][url] = ""
-;projects[ldp][type] = "theme"
-
-; Please fill the following out. Type may be one of get, cvs, git, bzr or svn,
-; and url is the url of the download.
-;projects[rubik][download][type] = ""
-;projects[rubik][download][url] = ""
-;projects[rubik][type] = "theme"
 
 
 ; Libraries
